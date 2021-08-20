@@ -29,17 +29,18 @@ const questions = [
     type: "input",
     name: "installation",
     message: "Please provide installation instructions",
+    default: "npm i",
   },
   {
     type: "input",
     name: "usage",
     message: "Please provide usage instructions",
   },
-  {
-    type: "input",
-    name: "contributions",
-    message: "How can others contribute to this project?",
-  },
+  // {
+  //   type: "input",
+  //   name: "contributions",
+  //   message: "How can others contribute to this project?",
+  // },
   {
     type: "input",
     name: "test",
@@ -49,16 +50,24 @@ const questions = [
     type: "list",
     name: "license",
     message: "What type of license would you like to use?",
-    choices: ["MIT", "GNU", "GPLv3"],
+    choices: ["MIT", "GPLv3", "GPLv2", "Unlicensed"],
   },
 ];
 
-inquirer.prompt(questions).then((responses) => console.log(responses));
 // // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+function writeToFile(data) {
+  fs.writeFile("README.md", generateMarkdown(data), (err) =>
+    err ? console.error(err) : console.log("data written to file")
+  );
+}
 
 // // TODO: Create a function to initialize app
-// function init() {}
+function init() {
+  inquirer.prompt(questions).then((data) =>
+    //   console.log(data)
+    writeToFile(data)
+  );
+}
 
 // // Function call to initialize app
-// init();
+init();
