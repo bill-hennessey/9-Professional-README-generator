@@ -18,14 +18,10 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
-// what is this?
-// if no badge
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
-// what is this?
-
-
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data, license) {
@@ -75,7 +71,6 @@ ${data.email}
 }
 
 module.exports = generateMarkdown;
-// youre only exporting generateMarkdown but it includes the other functions above.
 
 // GNU GPLv3
 // [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)

@@ -1,9 +1,10 @@
-# Big Project Name
+# Professional Readme Generator
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-this is what it is. Its a thing that does a thing
+
+This is command line application that generates a quality README.md file automatically based on user inputs (like the ones I'm typing in right now). I used the Inquirer npm library to code in the questions that populate the sections of the Readme and create the file with a file system method (also required in).
 
 ## Table of Contents
 
@@ -15,28 +16,30 @@ this is what it is. Its a thing that does a thing
 - [Questions](#questions)
 
 ## Installation
-npm i
+
+Simply type into the terminal 'node index.js' to invoke the program.
 
 ## Usage
-jusr use it
+
+After running the program, answer the questions and marvel as the file is created automatically in the same directory.
+
+[[Walkthru Video]](https://drive.google.com/file/d/1qvluAA99qVYCZbtqsCVMVKTH35qnCvLu/view)
 
 ## License
-GPLv2
+
+MIT
 
 ## Contributing
-bill-h
 
-
-## Tests
-testing.com
+bill-hennessey
 
 ## Questions
-If you have any quesetions for me about this application, please find me on GitHub: 
-bill-h 
 
-[My GitHub Profile](https://github.com/bill-h)
+If you have any quesetions for me about this application, please find me on GitHub:
+bill-hennessey
+
+[My GitHub Profile](https://github.com/bill-hennessey)
 
 or by emailing me at:
 
-bucc@email.com
-
+bhennessey1020@gmail.com
